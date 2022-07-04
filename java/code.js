@@ -6,6 +6,7 @@ age: "...",
 
         }
     },
+
     methods:  {
        async getUser(){
        
@@ -16,10 +17,10 @@ age: "...",
             document.getElementById("output").innerHTML = "";
 
             if(parseInt(this.age) > 17){
-                alert("You have met the requirments")
+                confirm("You have met the requirments")
                 this.isVisible = true;
             }else{
-                alert("You have not met the requirments")
+                confirm("You have not met the requirments.")
                 this.isVisible = false;
             }
         }
