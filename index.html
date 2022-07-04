@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- bootstrap css -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+    <!-- personal css -->
+<link rel="stylesheet" href="./css/style.css">
+
+    <title>Do you meet the requirments</title>
+</head>
+<body>
+    
+   <div class="text-center mx-5 py-4" id="app">
+    
+        <label for="name">Name:</label><br>
+    <input class="text-center" type="text" id="name" placeholder="Enter your Name"><br>
+<hr>
+    <label for="age">Age:</label><br>
+    <input class="text-center"  type="text" id="age" placeholder="Enter your age"><br><br>
+<hr>
+    <button v-on:click="getUser()" :class="gender">Display</button>
+
+    <br><br>
+    <p id="output" v-show="isVisible">My Name is {{firstName}} and I am {{age}} years old.</p>
+
+   </div>
+
+    <!-- js links -->
+
+    <!-- vue cdn link -->
+    <script src="https://unpkg.com/vue@3.0.5"></script>
+
+<!-- personal js -->
+<script src="./java/code.js"></script>
+
+</body>
+</html>
