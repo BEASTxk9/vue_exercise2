@@ -1,7 +1,6 @@
 const app = Vue.createApp({
-
 template: `
-<form class="text-center">
+<div class="text-center">
   
 <label for="name">Name:</label><br>
 <input class="text-center" type="text" id="name" placeholder="Enter your Name"><br>
@@ -14,10 +13,13 @@ template: `
 <br><br>
 <p id="output" v-show="isVisible">My Name is {{firstName}} and I am {{age}} years old.</p>
 
-</form>
+</div>
 `,
 
+
+
     data(){
+        
         return{
 firstName: "...",
 age: "...",
@@ -28,7 +30,8 @@ age: "...",
     methods:  {
        async getUser(){
        
-
+         
+            
             this.firstName = document.getElementById("name").value,
             this.age = document.getElementById("age").value,
 
