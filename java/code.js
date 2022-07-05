@@ -17,7 +17,7 @@ template: `
 `,
 
 
-
+// .....
     data(){
         
         return{
@@ -26,12 +26,12 @@ age: "...",
 
         }
     },
+// .....
 
     methods:  {
+        // ....
        async getUser(){
-       
          
-            
             this.firstName = document.getElementById("name").value,
             this.age = document.getElementById("age").value,
 
@@ -44,9 +44,12 @@ age: "...",
                 confirm("You have not met the requirments.")
                 this.isVisible = false;
             }
+        
         }
-   
+//    .....
     },
+
+    
 })
 
 app.mount("#app");
